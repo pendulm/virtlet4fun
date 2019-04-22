@@ -1,4 +1,5 @@
 #!/bin/bash
 
-virsh destroy fedora-ks
-virsh undefine fedora-ks --remove-all-storage
+domain=$1
+virsh destroy $domain
+virsh undefine $domain --remove-all-storage
