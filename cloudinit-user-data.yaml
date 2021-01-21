@@ -1,0 +1,7 @@
+#cloud-config
+password: 'r00t'
+chpasswd: { expire: false }
+hostname: "fedora33-2"
+fqdn: "fedora33-2.local"
+manage_etc_hosts: true
+
