@@ -1,7 +1,10 @@
 #cloud-config
-password: 'r00t'
-chpasswd: { expire: false }
-hostname: "fedora33-2"
-fqdn: "fedora33-2.local"
+fqdn: "fedora33"
 manage_etc_hosts: true
-
+users:
+  - default
+  - name: root
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCeIHTOJJ7f1idYtCH/kS9Zb0V+TvLi0JjaV9OHPP85mDDnF1w/Rfn2bFEsU5crZDk3fgw5QUAbe/KqT15VdknxEItXDzQqMJou8k1oXfozKbXWpwTpQIGMtN/2cFO3HnAG8wUABh7pKQBj5s/MjiizQy7CzXbZY1wxn0GoKnJ14uBRtjG1LtIjdfX/DO8iyUTHOv57btNk9YhUJePP+m3lfrUPIcB/s6ZWJmi7pJCcIU7w/AcAW6E11nsSH0a5Z9fAQPs4TBiHwny/3Laz8IrZUESb1WpArFGG7j1sf/ft/Uacym/BSho/Ulb5rNGjVDz1ow3QlLBmVg4DnFbERXgkVEImdALrstVnFXk9J41kywmMmZMNFD3shnNnGBrt1s84DYZGvgGAawDOvlEkR76m9vnA29XNcbm0mx8tWB3gUB5x2fj+9Z2pWvy9pO/3C0FocIOKpv+lqDOUGPrfBVcOR0C6wE8qgfumG1VTVtZMm3ls3ljT+E2baDpxFZw7HFU= mike@x240-localdomain
+password: '123'
+chpasswd: { expire: false }
